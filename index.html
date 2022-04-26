@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <title>Qasim Ali | Full stack Dev</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="top">
+                <ul>
+                    <li>Qasim Ali</li>
+                    <li>About</li>
+                    <li>Showcase</li>
+                    <li>Blogs</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="hero">
+                <p>Full stack developer At Hyblockcapitals</p>
+                <h1 class="animate__animated animate__flash">Qasim Ali</h1>
+                <div class="hero-img">
+                    <img id="mgi" class="animate__animated" style="opacity:0;" src="https://media-exp1.licdn.com/dms/image/C4D03AQGu6REg2_O9lw/profile-displayphoto-shrink_800_800/0/1648554711656?e=1656547200&v=beta&t=AtWzS_0H-zlX_GnKmA6K8QDrW-lckbuabdeqyppy1Z0"/>
+                    <div class="cas" style="display: flex;justify-content: center;">
+                        <button class="btn-down" style="bottom: 200px;left: 48%;">Resume <img style="height: 10px;" src="images/file.png"></button>
+                    </div>
+                </div>
+                <div class="hero-desc">
+                    <p>Indian based Full Stack Developer Mostly working With fintech companies and Crypto Startups To Create Web 3.0 Solutions For Daily Use Cases. Currently employed with a crypto based US startup.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+
+    document.addEventListener("scroll", (e) => { // e.cancelBubble();
+        console.log(e);
+
+        function getYPosition() {
+            var top = window.pageYOffset || document.documentElement.scrollTop
+            return top;
+        }
+        console.log(getYPosition())
+        if(getYPosition() <= 300){
+            document.getElementById("mgi").style = `transform:translateY(-${getYPosition()}px)`
+        }
+        // if (getYPosition() >= 250) {
+        //     document.getElementById("mgi").style = "opacity:100;transform:translateY(-100px);"
+        //     document.getElementById("mgi").classList.add("animate__bounceInUp");
+        // }
+    })
+</script>
